@@ -10,12 +10,12 @@ Summary(pl):	Modu³ Perla Pod::Escapes - dekodowanie sekwencji Pod <...>
 Name:		perl-Pod-Escapes
 Version:	1.03
 Release:	3
-# as perl itself 
-License:	GPLv1 or Artistic
+# same as perl
+License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a94933e85498788e2ff2777c53f99ea5
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -43,7 +43,8 @@ formatuj±ce Pod.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
