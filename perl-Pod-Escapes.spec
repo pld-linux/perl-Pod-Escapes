@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Pod
@@ -10,7 +10,8 @@ Summary(pl):	Modu³ Perla Pod::Escapes - dekodowanie sekwencji Pod <...>
 Name:		perl-Pod-Escapes
 Version:	1.03
 Release:	3
-License:	GPL/Artistic
+# as perl itself 
+License:	GPLv1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a94933e85498788e2ff2777c53f99ea5
@@ -37,7 +38,7 @@ formatuj±ce Pod.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
