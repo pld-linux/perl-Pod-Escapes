@@ -3,8 +3,8 @@
 %bcond_without	tests # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Pod
-%define	pnam	Escapes
+%define		pdir	Pod
+%define		pnam	Escapes
 Summary:	Pod::Escapes Perl module - for resolving Pod <...> sequences
 Summary(pl):	Modu³ Perla Pod::Escapes - dekodowanie sekwencji Pod <...>
 Name:		perl-Pod-Escapes
