@@ -5,11 +5,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Pod
 %define	pnam	Escapes
-Summary:	Pod::Escapes -- for resolving Pod EE<lt>...E<gt> sequences
-#Summary(pl):	
+Summary:	Pod::Escapes Perl module - for resolving Pod <...> sequences
+Summary(pl):	Modu³ Perla Pod::Escapes - do dekodowania sekwencji Pod <...>
 Name:		perl-Pod-Escapes
 Version:	1.02
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -19,12 +19,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module provides things that are useful in decoding Pod EE<lt>...E<gt>
-sequences.  Presumably, it should be used only by Pod parsers and/or
+This module provides things that are useful in decoding Pod <...>
+sequences. Presumably, it should be used only by Pod parsers and/or
 formatters.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ udostêpnia rzeczy przydatne do dekodowania sekwencji Pod
+<...>. Zapewne powinien byæ u¿ywany tylko przez programy analizuj±ce i
+formatuj±ce Pod.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
