@@ -8,8 +8,8 @@
 Summary:	Pod::Escapes Perl module - for resolving Pod <...> sequences
 Summary(pl):	Modu³ Perla Pod::Escapes - do dekodowania sekwencji Pod <...>
 Name:		perl-Pod-Escapes
-Version:	1.02
-Release:	2
+Version:	1.03
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
