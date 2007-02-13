@@ -6,7 +6,7 @@
 %define		pdir	Pod
 %define		pnam	Escapes
 Summary:	Pod::Escapes Perl module - for resolving Pod <...> sequences
-Summary(pl.UTF-8):   Moduł Perla Pod::Escapes - dekodowanie sekwencji Pod <...>
+Summary(pl.UTF-8):	Moduł Perla Pod::Escapes - dekodowanie sekwencji Pod <...>
 Name:		perl-Pod-Escapes
 Version:	1.04
 Release:	1
