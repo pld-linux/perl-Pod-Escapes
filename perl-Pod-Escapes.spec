@@ -13,8 +13,9 @@ Release:	2
 # same as perl
 License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Pod/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	00ea2e0d2e84ed98517a4616708b68d3
+URL:		http://search.cpan.org/dist/Pod-Escapes/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -52,5 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change*
-%{perl_vendorlib}/%{pdir}/*.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/Pod/Escapes.pm
+%{_mandir}/man3/Pod::Escapes.3pm*
