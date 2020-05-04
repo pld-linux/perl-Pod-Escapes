@@ -14,9 +14,10 @@ License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Pod/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7d0c0470284733eca869cb5d146ab372
-URL:		http://search.cpan.org/dist/Pod-Escapes/
+URL:		https://metacpan.org/release/Pod-Escapes
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
